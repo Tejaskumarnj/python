@@ -1,0 +1,24 @@
+Hi all,
+
+Create table in mysql for access points with following columns
+
+MACAddress, IPv4Address, IPv6Address, Name, State, Tunnel, Sec Mode, Mesh Role, PSK, Timer, HW Version, SW Version, Model, Serial number
+
+
+Write a python script to extract Access Points information from the attached file and insert the data to the mysql table at the appropriate columns.
+
+Note:
+from the diag.out file AP information will start from 
+
+--------------------------------------------------------------------
+----- APmgr info: apmgrinfo -a
+--------------------------------------------------------------------
+
+
+and ends with
+
+--------------------------------------------------------------------
+----- Disconnected APs: wlaninfo --all-disc-ap -l 3
+--------------------------------------------------------------------
+
+
